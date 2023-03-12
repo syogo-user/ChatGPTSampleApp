@@ -2,8 +2,6 @@
 //  ChatGPTSampleAppUITests.swift
 //  ChatGPTSampleAppUITests
 //
-//  Created by 小野寺祥吾 on 2023/03/12.
-//
 
 import XCTest
 

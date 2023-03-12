@@ -16,6 +16,7 @@
 		91A0339A29BD9C330019D5A9 /* ChatGPTSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0339929BD9C330019D5A9 /* ChatGPTSampleAppTests.swift */; };
 		91A033A429BD9C330019D5A9 /* ChatGPTSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A033A329BD9C330019D5A9 /* ChatGPTSampleAppUITests.swift */; };
 		91A033A629BD9C330019D5A9 /* ChatGPTSampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A033A529BD9C330019D5A9 /* ChatGPTSampleAppUITestsLaunchTests.swift */; };
+		91A033B429BD9D380019D5A9 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91A033B329BD9D380019D5A9 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A033B429BD9D380019D5A9 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = ChatGPTSampleApp;
+			packageProductDependencies = (
+				91A033B329BD9D380019D5A9 /* OpenAISwift */,
+			);
 			productName = ChatGPTSampleApp;
 			productReference = 91A0337F29BD9C310019D5A9 /* ChatGPTSampleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 91A0337629BD9C310019D5A9;
+			packageReferences = (
+				91A033B229BD9D380019D5A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 91A0338029BD9C310019D5A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -444,6 +452,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +480,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91A033B229BD9D380019D5A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91A033B329BD9D380019D5A9 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A033B229BD9D380019D5A9 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91A0337729BD9C310019D5A9 /* Project object */;
 }
